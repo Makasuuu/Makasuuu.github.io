@@ -1,6 +1,3 @@
-// ============================================
-// Mobile nav toggle
-// ============================================
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 
@@ -18,9 +15,7 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
-// ============================================
-// Scroll reveal
-// ============================================
+
 const revealTargets = document.querySelectorAll(
   '.section-eyebrow, .section-title, .about-text, .skill-card, .receipt, .timeline-item, .contact-card'
 );
@@ -43,9 +38,7 @@ if (prefersReducedMotion) {
   revealTargets.forEach(el => observer.observe(el));
 }
 
-// ============================================
-// Terminal typing sequence
-// ============================================
+
 const terminalBody = document.getElementById('terminalBody');
 
 const script = [
@@ -70,7 +63,6 @@ async function runTerminal() {
   if (!terminalBody) return;
 
   if (prefersReducedMotion) {
-    // Render instantly, no animation
     script.forEach(line => {
       const row = document.createElement('div');
       row.className = 'term-line';
@@ -119,7 +111,6 @@ async function runTerminal() {
   terminalBody.appendChild(finalRow);
 }
 
-// Kick off once terminal is in view
 const termObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -132,9 +123,6 @@ const termObserver = new IntersectionObserver((entries) => {
 const terminalEl = document.getElementById('terminal');
 if (terminalEl) termObserver.observe(terminalEl);
 
-// ============================================
-// Nav background on scroll
-// ============================================
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 20) {
@@ -144,7 +132,4 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// ============================================
-// Footer year
-// ============================================
 document.getElementById('year').textContent = new Date().getFullYear();
