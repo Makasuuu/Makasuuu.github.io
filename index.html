@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marcus Bautista — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Marcus Jandrei C. Bautista — IT student and full-stack developer building POS, inventory, and web systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<div class="noise-overlay" aria-hidden="true"></div>
+ 
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">root<span class="accent">@</span>marcus</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+ 
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot"></span>Available for internships &amp; junior roles</p>
+      <h1 class="hero-title">Marcus Jandrei<br>Bautista</h1>
+      <p class="hero-subtitle">IT student building point-of-sale systems, inventory tools, and interactive web front-ends — from the database up to the pixel.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+ 
+    <div class="terminal" id="terminal" aria-hidden="true">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">marcus@dasmarinas: ~</span>
+      </div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <p class="section-eyebrow">// about</p>
+    <h2 class="section-title">Systems-minded, front-end fluent.</h2>
+    <p class="about-text">
+      I'm a BS Information Technology student at University of Perpetual Help System – GMA, based in Dasmariñas, Cavite.
+      Most of my project work sits at the intersection of retail software and interface design — point-of-sale systems,
+      inventory trackers, and the databases that keep their records straight. I split my time between writing the logic
+      that moves data around and shaping the screens people actually use to see it.
+    </p>
+  </div>
+</section>
+ 
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="section-inner">
+    <p class="section-eyebrow">// modules --list</p>
+    <h2 class="section-title">What I work with</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <p class="skill-label">01 · Programming &amp; Web</p>
+        <ul class="skill-tags">
+          <li>Java</li><li>C#</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <p class="skill-label">02 · Systems &amp; OS</p>
+        <ul class="skill-tags">
+          <li>Ubuntu Linux</li><li>Windows CMD</li><li>VirtualBox</li><li>Hardware Virtualization</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <p class="skill-label">03 · Design &amp; Media</p>
+        <ul class="skill-tags">
+          <li>Figma (UI/UX)</li><li>Canva</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <p class="section-eyebrow">// transaction_log --recent</p>
+    <h2 class="section-title">Projects</h2>
+ 
+    <div class="receipts">
+ 
+      <article class="receipt">
+        <div class="receipt-head">
+          <span class="txn-id">TXN-001</span>
+          <span class="txn-year">2025</span>
+        </div>
+        <h3 class="receipt-name">Aromatique</h3>
+        <p class="receipt-desc">Web-based POS &amp; inventory system built with a 4-member team. Prototyped the admin product-management and checkout flow, then structured the PostgreSQL database in pgAdmin 4 to hold inventory and transaction records before handing the framework off for backend refinement.</p>
+        <div class="receipt-divider"></div>
+        <ul class="receipt-items">
+          <li><span>Node.js</span><span>x1</span></li>
+          <li><span>PostgreSQL</span><span>x1</span></li>
+          <li><span>JavaScript</span><span>x1</span></li>
+          <li><span>HTML / CSS</span><span>x1</span></li>
+        </ul>
+        <div class="receipt-divider"></div>
+        <div class="receipt-foot">
+          <span class="status status-handoff">STATUS: HANDED OFF</span>
+        </div>
+      </article>
+ 
+      <article class="receipt receipt-tilt-a">
+        <div class="receipt-head">
+          <span class="txn-id">TXN-002</span>
+          <span class="txn-year">2025</span>
+        </div>
+        <h3 class="receipt-name">FreshFare</h3>
+        <p class="receipt-desc">Desktop grocery POS with inventory management, built from scratch in Java Swing with a 4-member team. Co-engineered a file-based persistence layer for reading and updating records, plus pseudo-inventory tracking for stock and cart transactions.</p>
+        <div class="receipt-divider"></div>
+        <ul class="receipt-items">
+          <li><span>Java</span><span>x1</span></li>
+          <li><span>Java Swing</span><span>x1</span></li>
+          <li><span>File I/O</span><span>x1</span></li>
+        </ul>
+        <div class="receipt-divider"></div>
+        <div class="receipt-foot">
+          <span class="status status-complete">STATUS: COMPLETED</span>
+        </div>
+      </article>
+ 
+      <article class="receipt receipt-tilt-b">
+        <div class="receipt-head">
+          <span class="txn-id">TXN-003</span>
+          <span class="txn-year">2023</span>
+        </div>
+        <h3 class="receipt-name">FreeVee</h3>
+        <p class="receipt-desc">Solo-built interactive movie-streaming interface inspired by modern platforms. Focused on custom CSS animation and responsive components, using JavaScript to let visitors browse simulated selections with production-level layout fidelity.</p>
+        <div class="receipt-divider"></div>
+        <ul class="receipt-items">
+          <li><span>HTML</span><span>x1</span></li>
+          <li><span>CSS</span><span>x1</span></li>
+          <li><span>JavaScript</span><span>x1</span></li>
+        </ul>
+        <div class="receipt-divider"></div>
+        <div class="receipt-foot">
+          <span class="status status-shipped">STATUS: SHIPPED</span>
+          <a href="#" class="receipt-link">View project →</a>
+        </div>
+      </article>
+ 
+    </div>
+  </div>
+</section>
+ 
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <div class="section-inner">
+    <p class="section-eyebrow">// education --history</p>
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="timeline-years">2023 — 2027</p>
+          <h3>BS Information Technology</h3>
+          <p class="timeline-school">University of Perpetual Help System – GMA</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="timeline-years">2020 — 2022</p>
+          <h3>Information &amp; Communication Technology</h3>
+          <p class="timeline-school">Emilio Aguinaldo College – Cavite</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTACT -->
+<section class="section section-contact" id="contact">
+  <div class="section-inner">
+    <p class="section-eyebrow">// contact --send</p>
+    <h2 class="section-title">Let's build something.</h2>
+    <p class="about-text">Open to internships, junior developer roles, and collaborative projects. Reach out any time.</p>
+    <div class="contact-grid">
+      <a href="mailto:marcus.bautista0319@gmail.com" class="contact-card">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">marcus.bautista0319@gmail.com</span>
+      </a>
+      <a href="tel:+639919899564" class="contact-card">
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">0991 989 9564</span>
+      </a>
+      <div class="contact-card contact-card-static">
+        <span class="contact-label">Location</span>
+        <span class="contact-value">Dasmariñas, Cavite, PH</span>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<footer class="footer">
+  <p>// built by Marcus Bautista — <span id="year"></span></p>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
