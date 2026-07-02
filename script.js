@@ -52,7 +52,7 @@ const script = [
   { type: 'prompt', text: 'whoami' },
   { type: 'output', text: 'marcus_bautista', highlight: true },
   { type: 'prompt', text: 'cat role.txt' },
-  { type: 'output', text: 'IT Student · Full-Stack Developer' },
+  { type: 'output', text: 'IT Student · Front-End Developer' },
   { type: 'prompt', text: 'cat focus.txt' },
   { type: 'output', text: 'POS systems, inventory tools, web UI' },
   { type: 'prompt', text: 'status --check' },
